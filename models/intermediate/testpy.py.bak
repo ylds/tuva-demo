@@ -1,0 +1,16 @@
+import duckdb
+con = duckdb.connect("local.duckdb")
+con.execute("""
+select *
+from input_layer.medical_claim
+limit 5;
+""").fetchdf()
+
+
+
+con.execute("""
+    select
+        *
+    from int_oncology_costs
+    limit 5
+""").fetchdf()
