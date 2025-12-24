@@ -32,9 +32,7 @@ models/
 
 ### Cancer Definition
 A patient was classified as having cancer if they had at least one claim containing:
-- Oncology-related diagnosis codes  
-- Oncology-related procedure or revenue center codes  
-(as provided in the Tuva Project synthetic dataset)
+- Diagnosis codes 1-10 starting with C
 
 ### Cost Definition
 - Only **paid amounts** were used for cost analysis
@@ -56,9 +54,9 @@ Care setting was derived using a combination of:
 ## 📊 Key Findings (Executive Summary)
 
 ### 📈 Overall Cancer Population (data range: 2016~2018)
-- 🧾 **1,000** oncology-related claim lines  
-- 📄 **215** distinct claims  
-- 👥 **79** distinct patients  
+- 🧾 **1,000** cancer-related claim lines  
+- 📄 **215** cancer-related claims  
+- 👥 **79** distinct patients with cancer-related claims
 - 💰 **$218,109.96** total cancer-related paid amount  
 
 ---
